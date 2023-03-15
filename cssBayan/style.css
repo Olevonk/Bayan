@@ -1,28 +1,109 @@
-/*
-Normalize of the project
-*/
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-ul,
-ol,
-li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+html {
+    scroll-behavior: smooth;
+
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin-top: 0;
-    margin-bottom: 0;
+body {
+    background-color: rgb(183, 108, 57);
+    font-family: 'Comic Neue', cursive;
+    font-size: 1.3vw;
 }
 
+header {
+    padding: 25px 0 20px;
+    text-align: center;
+}
+
+main {
+    color: rgb(63, 36, 8);
+    height: 100%;
+}
+
+.life {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(97, 39, 3);
+}
+
+.xmark {
+    width: 20px;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.mylife:hover {
+    cursor: pointer;
+    color: #240f01;
+    transition: all 0.7s;
+}
+
+.mylife:hover>label>div>div {
+    background: url(./img/plusmark.svg) no-repeat;
+}
+
+.life:hover,
+input:checked+label>.life {
+    height: 59vh;
+    cursor: pointer;
+    transition: all 0.7s;
+    color: #240f01;
+}
+
+.life:hover>.xmark,
+input:checked+label>.life>.xmark {
+    cursor: pointer;
+    background: url(./img/xmark.svg) no-repeat;
+}
+
+.mylife>label>.beginning:hover,
+input:checked+label>.beginning {
+    background: center/55% url(./img/001.jpg) no-repeat;
+}
+
+.mylife>label>.wanted:hover,
+input:checked+label>.wanted {
+    background: center/55% url(./img/002.jpg) no-repeat;
+}
+
+.mylife>label>.later:hover,
+input:checked+label>.later {
+    background: center/55% url(./img/003.jpg) no-repeat;
+}
+
+.mylife>label>.history:hover,
+input:checked+label>.history {
+    background: center/55% url(./img/004.jpg) no-repeat;
+}
+
+.mylife>label>.thecar:hover,
+input:checked+label>.thecar {
+    background: center/55% url(./img/005.jpg) no-repeat;
+}
+
+
+@media (max-width: 1440px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1180px) {
+    .life:hover {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 980px) {
+    .life:hover {
+        height: 25vh;
+    }
+}

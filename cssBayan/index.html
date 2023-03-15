@@ -5,12 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhotoS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
-    <h1>SOON</h1>
-    <h1>There will be an accordion</h1>
-    <br>
-    <h2>скоро тут будет аккардион</h2>
+    <header class="container">
+        <h1>My life</h1>
+    </header>
+    <main class="container">
+        <div class="mylife">
+            <input type="radio" id="beginning" name="life" checked hidden />
+            <label for="beginning">
+                <div class="life beginning">
+                    <h2>In the beginning</h2>
+                    <div class="xmark"></div>
+                </div>
+            </label>
+            <input type="radio" id="wanted" name="life" hidden />
+            <label for="wanted">
+                <div class="life wanted">
+                    <h2>Wanted</h2>
+                    <div class="xmark"></div>
+                </div>
+            </label>
+            <input type="radio" id="later" name="life" hidden />
+            <label for="later">
+                <div class="life later">
+                    <h2>10 years later</h2>
+                    <div class="xmark"></div>
+                </div>
+            </label>
+            <input type="radio" id="history" name="life" hidden />
+            <label for="history">
+                <div class="life history">
+                    <h2>Made history</h2>
+                    <div class="xmark"></div>
+                </div>
+            </label>
+            <input type="radio" id="thecar" name="life" hidden />
+            <label for="thecar">
+                <div class="life thecar">
+                    <h2>Just the car</h2>
+                    <div class="xmark"></div>
+                </div>
+            </label>
+        </div>
+    </main>
+    <footer>
+    </footer>
 </body>
 </html>
